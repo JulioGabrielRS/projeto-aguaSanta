@@ -1,0 +1,96 @@
+/* Estilos principais */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.areas-da-empresa {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #0066cc, #00cc99);
+  color: white;
+}
+
+.areas-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.quadrado {
+  background: white;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quadrado img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.quadrado:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 900px;
+  overflow: hidden;
+}
+
+.modal-content img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.modal-description {
+  padding: 20px;
+  width: 50%;
+}
+
+.modal-description h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.modal-description p {
+  font-size: 1em;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+}

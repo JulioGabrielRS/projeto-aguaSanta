@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Áreas da Empresa</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <section class="areas-da-empresa">
+    <h1>Áreas da Nossa Empresa</h1>
+    <div class="areas-container">
+      <div class="quadrado" onclick="abrirModal('Área 1', 'Descrição detalhada da Área 1', 'area1.jpg')">
+        <img src="../images/Batata.jpg" alt="Imagem Área 1">
+        <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, inventore recusandae enim necessitatibus, quo corporis facere eveniet vero nulla minima iure veniam fugiat quasi, totam cum! Eos nisi error ad.</h2>
+      </div>
+      <div class="quadrado" onclick="abrirModal('Área 2', 'Descrição detalhada da Área 2', 'area2.jpg')">
+        <img src="../images/Batata.jpg" alt="Imagem Área 2">
+        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam debitis commodi fugit ipsa mollitia quam hic asperiores tenetur. Et omnis aliquid dolor suscipit? Voluptas cum, necessitatibus sunt explicabo obcaecati quod.</h2>
+      </div>
+      <div class="quadrado" onclick="abrirModal('Área 3', 'Descrição detalhada da Área 3', 'area3.jpg')">
+        <img src="../images/Batata.jpg" alt="Imagem Área 3">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ducimus explicabo neque repellat fuga laboriosam velit? Facilis sunt repellendus ex, rerum dolores nostrum rem id dolor earum, harum commodi eum?</h2>
+      </div>
+      <div class="quadrado" onclick="abrirModal('Área 4', 'Descrição detalhada da Área 4', 'area4.jpg')">
+        <img src="../images/Batata.jpg" alt="Imagem Área 4">
+        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum ipsam deserunt velit unde. Fugit ad distinctio laudantium quidem ipsum atque ex explicabo, maxime odio quos reprehenderit cum accusantium quam. Dolor!</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <img id="modal-image" src="" alt="Imagem ampliada">
+      <div class="modal-description">
+        <h2 id="modal-title"></h2>
+        <p id="modal-text"></p>
+      </div>
+    </div>
+    <button class="modal-close" onclick="fecharModal()">X</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
