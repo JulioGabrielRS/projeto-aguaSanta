@@ -8767,55 +8767,10 @@ html.rd-navbar-fixed-linked .page {
 
 /* Estilo do produto */
 .product {
+	border-radius: 10px;
 	position: relative;
 	width: 220px;
 	overflow: hidden;
-	cursor: pointer;
-}
-
-/* Estilo do modal */
-.modal {
-	display: none;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.8);
-	justify-content: center;
-	align-items: center;
-	z-index: 1000;
-}
-
-.modal-content {
-	display: flex;
-	gap: 20px;
-	background: #fff;
-	padding: 20px;
-	border-radius: 10px;
-	max-width: 80%;
-}
-
-.modal-content img {
-	max-width: 300px;
-	max-height: 300px;
-	object-fit: cover;
-}
-
-.modal-description h4 {
-	margin: 0;
-}
-
-.modal-description p {
-	margin-top: 10px;
-}
-
-.close {
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	font-size: 30px;
-	color: #fff;
 	cursor: pointer;
 }
 
@@ -8825,46 +8780,67 @@ html.rd-navbar-fixed-linked .page {
   gap: 20px;
   padding: 20px;
 }
+
 /* Modal */
 .modal {
-  display: none;
+  display: none; /* Modal oculto inicialmente */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  justify-content: center;
-  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
   z-index: 1000;
+  padding: 20px; /* Adiciona espaçamento em volta para dispositivos pequenos */
+  box-sizing: border-box; /* Garante que o padding não afete o layout */
 }
 
+
+
+/* Ajustes em telas menores */
+@media (max-width: 768px) {
+  .modal-content {
+    max-width: 90%; /* Modal ocupa 90% da largura em telas pequenas */
+  }
+}
+
+
 .modal-content {
-  display: flex;
+  display: flex; /* Define layout lado a lado */
+  flex-direction: row; /* Garante que imagem e descrição fiquem na horizontal */
+  width: 60%; /* Ocupa 80% da largura da tela */
+  height: 60%; /* Ocupa 80% da altura da tela */
   background: white;
   border-radius: 10px;
-  width: 80%;
-  max-width: 900px;
-  overflow: hidden;
+  overflow: hidden; /* Impede que o conteúdo ultrapasse o limite */
 }
 
 .modal-content img {
-  width: 50%;
-  object-fit: cover;
+  width: 50%; /* Metade da largura */
+  height: 100%; /* Preenche toda a altura */
+  object-fit: cover; /* Ajusta a imagem sem distorcer */
 }
 
 .modal-description {
+  width: 50%; /* Metade da largura */
   padding: 20px;
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente o texto */
+  align-items: flex-start; /* Alinha o texto à esquerda */
+  text-align: left;
 }
 
 .modal-description h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
+  font-size: 2em; /* Tamanho do título */
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
 }
 
 .modal-description p {
-  font-size: 1em;
+  font-size: 1em; /* Tamanho do texto */
+  line-height: 1.5; /* Espaçamento entre linhas */
 }
 
 .modal-close {
@@ -8878,110 +8854,24 @@ html.rd-navbar-fixed-linked .page {
   cursor: pointer;
 }
 
+/* Responsividade */
+@media (max-width: 768px) {
+  .modal-content {
+    flex-direction: column; /* Disposição vertical em telas menores */
+    width: 90%;
+    height: auto;
+  }
 
+  .modal-content img,
+  .modal-description {
+    width: 100%; /* Largura total */
+    height: auto;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.product {
-	position: relative;
-	width: 220px;
-	overflow: hidden;
-	cursor: pointer;
-}
-
-.product h4{
-	color: #ffffff;
-}
-
-.product img {
-	width: 100%; /*Tamanho da imagem */
-	height: auto;
-	display: block;
-	border-radius: 15px; 
-}
-
-.gradeprodutos {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	border-radius: 15px; 
-	gap: 20px;
-}
-
-.product-container {
-	position: relative;
-	width: calc(25% - 20px); /* Adjust the width and spacing as needed */
-}
-
-.product {
-	position: relative;
-	border-radius: 15px;
-	overflow: hidden;
-}
-
-.product img {
-	width: 100%;
-	display: block;
-	border-radius: 15px; /* Ensure images also have rounded corners */
-}
-
-.product-info {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: #2286a5b2;
-	color: white;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	opacity: 0;
-	transition: opacity 0.3s ease-in-out;
-	padding: 10px;
-	box-sizing: border-box;
-	border-radius: 15px;
-	text-align: center;
-	overflow: hidden; /* Ensure content does not overflow the container */
-	word-wrap: break-word; /* Ensure long words break to fit within the container */
-}
-.product-info h4,
-.product-info p {
-	font-size: 24px; /* Define o tamanho da fonte do h */
-	color: white;
-	margin: 0; /* Remove a margem padrão */
-	padding: 5px; /* Adiciona algum preenchimento */
-	max-width: 100%; /* Garante que o conteúdo permaneça dentro do contêiner */
-	overflow-wrap: break-word; /* Quebra palavras longas */
-}
-
-.product-info h4 {
-	font-size: 24px; /* Define o tamanho da fonte do h */
-}
-
-.product-info p {
-	font-size: 16px; /* Define o tamanho da fonte do parágrafo */
-}
-
-.product:hover .product-info {
-	opacity: 1;
-}
-footer {
-	background-color: #333333;
-	color: white;
-	text-align: center;
-	padding: 10px 20px;
+  .modal-description {
+    align-items: center; /* Centraliza o texto em telas menores */
+    text-align: center;
+  }
 }
 @font-face {
 	font-family: 'Lucida Handwriting';
@@ -9081,3 +8971,64 @@ footer {
   text-align: center; /* Alinha o vídeo no centro do bloco */
 }
 
+.rolagem {
+	position: relative;
+	width: 80%;
+	max-width: 700px;
+	overflow: hidden;
+	border-radius: 15px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.rolagem-track {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+
+.rolagem-item {
+	min-width: 100%;
+	transition: transform 0.5s ease-in-out;
+	border-radius: 15px;
+}
+
+.rolagem-item img {
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+	object-fit: cover;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.rolagem-button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	border: none;
+	padding: 15px;
+	cursor: pointer;
+	border-radius: 50%;
+	font-size: 20px;
+	z-index: 10;
+	transition: background-color 0.3s ease;
+}
+
+.rolagem-button:hover {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.rolagem-button.prev {
+	left: 10px;
+}
+
+.rolagem-button.next {
+	right: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+	.carousel {
+			width: 95%;
+	}
+}
