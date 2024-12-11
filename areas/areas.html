@@ -1,46 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Áreas da Empresa</title>
-  <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áreas da Empresa</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    
 </head>
 <body>
-  <section class="areas-da-empresa">
-    <h1>Áreas da Nossa Empresa</h1>
-    <div class="areas-container">
-      <div class="quadrado" onclick="abrirModal('Batata', 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, inventore recusandae enim necessitatibus, quo corporis facere eveniet vero nulla minima iure veniam fugiat quasi, totam cum! Eos nisi error ad.', '../images/Batata.jpg')">
-        <img src="../images/Batata.jpg" alt="Imagem Área 1">
-        <h2>setor1.</h2>
-      </div>
-      <div class="quadrado" onclick="abrirModal('Área 2', 'Descrição detalhada da Área 2', 'area2.jpg')">
-        <img src="../images/Batata.jpg" alt="Imagem Área 2">
-        <h2>setor2</h2>
-      </div>
-      <div class="quadrado" onclick="abrirModal('Área 3', 'Descrição detalhada da Área 3', 'area3.jpg')">
-        <img src="../images/Batata.jpg" alt="Imagem Área 3">
-        <h2>setor3</h2>
-      </div>
-      <div class="quadrado" onclick="abrirModal('Área 4', 'Descrição detalhada da Área 4', 'area4.jpg')">
-        <img src="../images/Batata.jpg" alt="Imagem Área 4">
-        <h2>setor4</h2>
-      </div>
-    </div>
-  </section>
+    <header>
+        <img src="../images/Logo 1000x1000.png" alt="Logo da Empresa" class="logo">
+        <h1>Áreas da Nossa Empresa</h1>
+        <p>Explore nossas áreas de atuação e veja como podemos ajudar você!</p>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="#">----------</a></li>
+                <li><a href="#">---------</a></li>
+                <li><a href="#">----------------</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Modal -->
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <img id="modal-image" src="" alt="Imagem ampliada">
-      <div class="modal-description">
-        <h2 id="modal-title"></h2>
-        <p id="modal-text"></p>
-      </div>
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Área 1">
+                <div class="card-content">
+                    <h3>Área de Tecnologia</h3>
+                    <p>Desenvolvemos soluções inovadoras para transformar seu negócio.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Área 2">
+                <div class="card-content">
+                    <h3>Consultoria Empresarial</h3>
+                    <p>Fornecemos estratégias personalizadas para o sucesso da sua empresa.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Área 3">
+                <div class="card-content">
+                    <h3>Marketing Digital</h3>
+                    <p>Potencializamos a presença da sua marca no ambiente digital.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Área 4">
+                <div class="card-content">
+                    <h3>Recursos Humanos</h3>
+                    <p>Conectamos talentos às melhores oportunidades do mercado.</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <button class="modal-close" onclick="fecharModal()">X</button>
-  </div>
 
-  <script src="script.js"></script>
+        <!--rodapé--> 
+        <footer class="footer-classic ">
+          <div class="container" id="rodape">
+            <div class="row row-30">
+              <div class="col-lg-4 wow fadeInLeft">
+                <!--Brand--><a class="brand" style="text-decoration: none;" href="index.html"><img class="brand-logo-dark" src="images/logo.png" draggable="false" width="100" height="17"/><img class="brand-logo-light" src="../images/logo.png" draggable="false" width="100" height="17"/></a>
+                <p class="footer-classic-description offset-top-0 offset-right-25">Pensamos no negócio permanentemente. Equilibramos crescimento com sustentabilidade. Executamos nossos sonhos.</p>
+              </div>
+              <div class="col-lg-4 col-sm-8 wow fadeInUp">
+  
+                  <!-- Localização -->
+                  <a>Localização:</a>
+                      <a class="d-inline-block accent-link"style="text-decoration: none;" href="https://www.google.com/maps/place/Fazenda+%C3%81gua+Santa+-+Jo%C3%A3o+Em%C3%ADlio+Rocheto/@-19.3600367,-47.3645872,15z/data=!4m6!3m5!1s0x94affbd0fb02c377:0xbcebbe86e305a93b!8m2!3d-19.3600367!4d-47.3645872!16s%2Fg%2F11f1wfbydr?entry=ttu" target="_blank"> BR-452, 258 - Zona Rural, Perdizes - MG, 38170-000</a>
+  
+                  <!-- E-mail de contato -->
+                      <a>E-mail: </a>
+                      <a class="d-inline-block accent-link" style="text-decoration: none;" href="mailto:contato@aguasanta.agr.br" target="_blank">  contato@aguasanta.agr.br<br></a>
+  
+                  <!-- Telefone -->
+                  <a><br>Telefone:</a>
+                      <a class="d-inline-block accent-link" style="text-decoration: none;" href="tel:+5534992610069" target="_blank"> +55 34 99196-9278</a>
+  
+              </div>
+              
+              <!--Mapa interativo-->
+  
+              <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".2s">
+                <p class="footer-classic-title">Mapa interativo </p>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4719.785943138435!2d-47.36718059840004!3d-19.360099156090065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94affbd0fb02c377%3A0xbcebbe86e305a93b!2sFazenda%20%C3%81gua%20Santa%20-%20Jo%C3%A3o%20Em%C3%ADlio%20Rocheto!5e1!3m2!1spt-BR!2sbr!4v1726772022282!5m2!1spt-BR!2sbr" width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+            </div>
+            
+            </div>
+          </div>
+          <div class="container wow fadeInUp" data-wow-delay=".4s">
+            <div class="footer-classic-aside">
+              <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. Todos os direitos reservados a Fazenda Água Santa.</p>
+           
+            </div>
+          </div>
+        </footer>
 </body>
 </html>
