@@ -13,11 +13,18 @@ body {
 }
 
 header {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.756);
   color: #2186a4;
   position: relative;
   text-align: center;
   padding: 0rem 0;
+}
+
+.voltar {
+  position: absolute;
+  margin-top: 20px;
+  left: 20px;
+  width: 50px;
 }
 
 header h1 {
