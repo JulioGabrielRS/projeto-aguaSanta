@@ -8780,6 +8780,21 @@ html.rd-navbar-fixed-linked .page {
   gap: 20px;
   padding: 40px;
 }
+/* Modal */
+.modal {
+  display: none; /* Modal oculto inicialmente */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  z-index: 1000;
+  padding: 20px; /* Adiciona espaçamento em volta para dispositivos pequenos */
+  box-sizing: border-box; /* Garante que o padding não afete o layout */
+}
 
 /* Modal */
 .modal {
@@ -8797,24 +8812,17 @@ html.rd-navbar-fixed-linked .page {
   box-sizing: border-box; /* Garante que o padding não afete o layout */
 }
 
-
-
-/* Ajustes em telas menores */
-@media (max-width: 768px) {
-  .modal-content {
-    max-width: 90%; /* Modal ocupa 90% da largura em telas pequenas */
-  }
-}
-
-
+/* Modal Content */
 .modal-content {
   display: flex; /* Define layout lado a lado */
   flex-direction: row; /* Garante que imagem e descrição fiquem na horizontal */
-  width: 60%; /* Ocupa 80% da largura da tela */
-  height: 60%; /* Ocupa 80% da altura da tela */
+  width: 60%; /* Ocupa 60% da largura da tela */
+  max-width: 800px; /* Limita a largura máxima */
+  height: 60%; /* Ocupa 60% da altura da tela */
   background: white;
   border-radius: 10px;
   overflow: hidden; /* Impede que o conteúdo ultrapasse o limite */
+  position: relative;
 }
 
 .modal-content img {
@@ -8831,16 +8839,22 @@ html.rd-navbar-fixed-linked .page {
   justify-content: center; /* Centraliza verticalmente o texto */
   align-items: flex-start; /* Alinha o texto à esquerda */
   text-align: left;
+  overflow-y: auto; /* Permite rolagem na descrição se necessário */
 }
 
 .modal-description h2 {
   font-size: 2em; /* Tamanho do título */
   margin-bottom: 10px; /* Espaçamento abaixo do título */
+  word-wrap: break-word; /* Quebra de palavra longa */
+  overflow-wrap: break-word; /* Quebra de palavras longas */
+  hyphens: auto; /* Hífen nas palavras longas */
+  word-break: break-word; /* Força quebra de palavras longas */
 }
 
 .modal-description p {
   font-size: 1em; /* Tamanho do texto */
   line-height: 1.5; /* Espaçamento entre linhas */
+  overflow-wrap: break-word; /* Quebra de palavras longas */
 }
 
 .modal-close {
@@ -8855,6 +8869,19 @@ html.rd-navbar-fixed-linked .page {
 }
 
 /* Responsividade */
+@media (max-width: 1024px) {
+  .modal-content {
+    width: 80%; /* Aumenta a largura para dispositivos menores que 1024px */
+    height: 80%;
+  }
+
+  .modal-content img,
+  .modal-description {
+    width: 100%; /* Ocupa toda a largura */
+    height: auto;
+  }
+}
+
 @media (max-width: 768px) {
   .modal-content {
     flex-direction: column; /* Disposição vertical em telas menores */
@@ -8873,6 +8900,21 @@ html.rd-navbar-fixed-linked .page {
     text-align: center;
   }
 }
+
+@media (max-width: 480px) {
+  .modal-description h2 {
+    font-size: 1.5em; /* Tamanho do título menor em telas muito pequenas */
+  }
+
+  .modal-description p {
+    font-size: 0.9em; /* Tamanho do texto menor */
+  }
+
+  .modal-close {
+    font-size: 1.5em; /* Tamanho da close button menor */
+  }
+}
+
 @font-face {
 	font-family: 'Lucida Handwriting';
 	src: url('../fonts/LucidaHandwriting.woff2') format('woff2'),
