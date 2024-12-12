@@ -8041,9 +8041,6 @@ html.rd-navbar-fixed-linked .page {
 	border-top: 0;
 }
 
-.card-group-custom .card + .card {
-	margin-top: 0;
-}
 
 .card-custom {
 	display: block;
