@@ -8793,23 +8793,6 @@ html.rd-navbar-fixed-linked .page {
   box-sizing: border-box; /* Garante que o padding não afete o layout */
 }
 
-/* Modal */
-.modal {
-  display: none; /* Modal oculto inicialmente */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  z-index: 1000;
-  padding: 20px; /* Adiciona espaçamento em volta para dispositivos pequenos */
-  box-sizing: border-box; /* Garante que o padding não afete o layout */
-}
-
-/* Modal Content */
 .modal-content {
   display: flex; /* Define layout lado a lado */
   flex-direction: row; /* Garante que imagem e descrição fiquem na horizontal */
@@ -8864,6 +8847,7 @@ html.rd-navbar-fixed-linked .page {
   font-size: 2em;
   cursor: pointer;
 }
+
 
 /* Responsividade */
 @media (max-width: 1024px) {
