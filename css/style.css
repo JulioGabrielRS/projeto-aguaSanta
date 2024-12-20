@@ -4232,7 +4232,6 @@ textarea.form-input {
 .page {
 	position: relative;
 	overflow: hidden;
-	min-height: 100vh;
 	opacity: 0;
 }
 
