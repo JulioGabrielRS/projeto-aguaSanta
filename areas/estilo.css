@@ -36,36 +36,20 @@ header p {
   font-size: 1.2rem;
 }
 
-
-
-@media (max-width: 768px) {
-  .logo {
-      position: static;
-      display: block;
-      margin: 0 auto 10px;
-  }
-
-  header {
-      padding: 1rem 0;
-  }
-}
-
 .container {
-  
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
 .grid {
-  
+  position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
 
 .card {
-  
   background: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -160,5 +144,67 @@ nav ul li a:hover {
 
   nav ul li {
       margin: 10px 0;
+  }
+}
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  justify-content: space-between;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o botão de voltar */
+.voltar img {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+/* Logo no menu */
+.logo {
+  width: 200px; /* Tamanho padrão para telas pequenas */
+  transition: width 0.3s, opacity 0.3s;
+}
+
+/* Descrição do menu */
+.descricao {
+  margin-left: auto;
+  margin-right: 20px;
+  font-size: 14px; /* Fonte menor para telas pequenas */
+  transition: opacity 0.3s;
+  display: none; /* Oculta em dispositivos menores */
+}
+
+/* Menu reduzido ao rolar */
+.menu.reduzido {
+  padding: 5px 20px;
+}
+
+.menu.reduzido .logo {
+  width: 50px;
+  opacity: 0; /* Esconde a logo ao reduzir */
+}
+
+.menu.reduzido .descricao {
+  opacity: 0;
+}
+
+/* Responsividade para telas maiores */
+@media (min-width: 768px) {
+  .menu {
+      padding: 10px 30px;
+  }
+
+  .logo {
+      width: 300px; /* Aumenta a logo em telas maiores */
+  }
+
+  .descricao {
+      display: block; /* Mostra a descrição em telas maiores */
+      font-size: 16px; /* Fonte maior para boa leitura */
   }
 }
