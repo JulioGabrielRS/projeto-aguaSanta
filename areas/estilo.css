@@ -98,9 +98,11 @@ header p {
 .card-content p {
   color: #555;
 }
+
 footer p {
   font-size: 0.9rem;
 }
+
  /* Menu Responsivo */
  nav {
   position: absolute;
