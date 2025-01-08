@@ -9,6 +9,7 @@ function abrirModal(titulo, descricao, imagem) {
 function fecharModal() {
   document.getElementById('modal').style.display = 'none';
 }
+
 window.addEventListener('scroll', function () {
   const header = document.querySelector('.menu');
   const logo = document.querySelector('.logo');
