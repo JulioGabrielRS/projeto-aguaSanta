@@ -1,393 +1,509 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Fazenda Água Santa</title>
 
-    <!--favorion-->
-    <link rel="apple-touch-icon" sizes="57x57" href="favoricon.ion/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favoricon.ion/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favoricon.ion/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favoricon.ion/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favoricon.ion/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favoricon.ion/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favoricon.ion/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favoricon.ion/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favoricon.ion/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="favoricon.ion/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favoricon.ion/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favoricon.ion/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favoricon.ion/favicon-16x16.png">
-    <link rel="manifest" href="favoricon.ion/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
-    
-    <link rel="manifest" href="images/site.webmanifest">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:300,400,700%7CPoppins:300,400,500,700,900">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
-    
-  </head>  
-  <body>
-    <!--Tela De Erro-->
-    <div class="ie-panel ">
-      <a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
-    </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Fazenda Água Santa</title>
 
-    <!--Tela Carregando-->
-    <div class="preloader">
-      <div class="preloader-body">
-        <div class="cssload-container">
-          <div class="cssload-speeding-wheel"></div>
-        </div>
-        <p>Carregando...</p>
+  <!--favorion-->
+  <link rel="apple-touch-icon" sizes="57x57" href="favoricon.ion/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favoricon.ion/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favoricon.ion/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favoricon.ion/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favoricon.ion/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favoricon.ion/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favoricon.ion/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favoricon.ion/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favoricon.ion/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favoricon.ion/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favoricon.ion/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favoricon.ion/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favoricon.ion/favicon-16x16.png">
+  <link rel="manifest" href="favoricon.ion/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+
+  <link rel="manifest" href="images/site.webmanifest">
+  <link rel="stylesheet" type="text/css"
+    href="//fonts.googleapis.com/css?family=Montserrat:300,400,700%7CPoppins:300,400,500,700,900">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .ie-panel {
+      display: none;
+      background: #212121;
+      padding: 10px 0;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+      clear: both;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    html.ie-10 .ie-panel,
+    html.lt-ie-10 .ie-panel {
+      display: block;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!--Tela De Erro-->
+  <div class="ie-panel ">
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg"
+        height="42" width="820"
+        alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
+  </div>
+
+  <!--Tela Carregando-->
+  <div class="preloader">
+    <div class="preloader-body">
+      <div class="cssload-container">
+        <div class="cssload-speeding-wheel"></div>
       </div>
+      <p>Carregando...</p>
     </div>
+  </div>
 
-    <!--Corpo do site-->
-    <div class="page">
-      <header class="section page-header">
-        <div class="rd-navbar-wrap">
-          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
-            
-          
-            <!--Configuração de menu-->
+  <!--Corpo do site-->
+  <div class="page">
+    <header class="section page-header">
+      <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+          data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
+          data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static"
+          data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px"
+          data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
 
-            <div class="rd-navbar-main-outer">
-              <div class="rd-navbar-main">
-                
-                <!--logo com escrita-->
-                <div class="rd-navbar-panel">
-                  
-                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap" id="setaVoltar"><span></span></button>
-                 
-                  <div class="rd-navbar-brand">
-                    <a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo.png" draggable="false" width="100" height="17"/><img class="brand-logo-light" src="images/logo-inverse-200x34.png" draggable="false" width="100" height="17"/></a>
-                  </div>
-                </div>
-                <!--Menu-->
-                <div class="rd-navbar-main-element">
-                  <div class="rd-navbar-nav-wrap">
-                    <ul class="rd-navbar-nav">
-                      <li class="rd-nav-item eleVoltar active"><a class="rd-nav-link"  style="text-decoration: none;" href="#inicio">Inicio</a>
-                      </li>
-                      <li class="rd-nav-item eleVoltar"><a class="rd-nav-link" style="text-decoration: none;" href="#sobreNos">Sobre</a>
-                      </li>
-                      <li class="rd-nav-item eleVoltar"><a class="rd-nav-link" style="text-decoration: none;" href="#product">Produtos</a>
-                      </li>
-                      <li class="rd-nav-item eleVoltar"><a class="rd-nav-link" style="text-decoration: none;" href="#localizacao">Localização</a>
-                      </li> 
-                      <li class="rd-nav-item eleVoltar"><a class="rd-nav-link" style="text-decoration: none;" href="#projetos">Projetos</a>
-                      </li>
-                      <li class="rd-nav-item eleVoltar"><a class="rd-nav-link" style="text-decoration: none;" href="#carreira">Carreira</a>
-                      </li>
-                      <li class="rd-nav-item eleVoltar"><a class="rd-nav-link" style="text-decoration: none;" href="#rodape">Contatos</a>
-                      </li>
 
-                    </ul>
+          <!--Configuração de menu-->
 
-                  </div>
+          <div class="rd-navbar-main-outer">
+            <div class="rd-navbar-main">
+
+              <!--logo com escrita-->
+              <div class="rd-navbar-panel">
+
+                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"
+                  id="setaVoltar"><span></span></button>
+
+                <div class="rd-navbar-brand">
+                  <a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo.png"
+                      draggable="false" width="100" height="17" /><img class="brand-logo-light"
+                      src="images/logo-inverse-200x34.png" draggable="false" width="100" height="17" /></a>
                 </div>
               </div>
-            </div>
-          </nav>
-        </div>
-      </header>
-      
-      <!--Tela de inicio-->
-      <section class="section main-section parallax-scene-js" style="background:url('images/FotoAguaSanta.jpg') no-repeat center center; background-size:cover;" id="inicio">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-8 col-12">
-              <div class="main-decorated-box text-center text-xl-left">
-                <h1 class="text-white text-xl-center wow slideInRight" data-wow-delay=".3s"><span class="align-top offset-top-30 d-inline-block font-weight-light prefix-text"></span><span class="big font-weight-bold d-inline-flex offset-right-170"></span><span class="biggest d-block d-xl-flex font-weight-bold" style="font-family: 'Lucida Handwriting';">Água Santa</span></h1>
+              <!--Menu-->
+              <div class="rd-navbar-main-element">
+                <div class="rd-navbar-nav-wrap">
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item eleVoltar active"><a class="rd-nav-link" style="text-decoration: none;"
+                        href="#inicio">Inicio</a>
+                    </li>
+                    <li class="rd-nav-item eleVoltar"><a class="rd-nav-link" style="text-decoration: none;"
+                        href="#sobreNos">Sobre</a>
+                    </li>
+                    <li class="rd-nav-item eleVoltar"><a class="rd-nav-link" style="text-decoration: none;"
+                        href="#product">Produtos</a>
+                    </li>
+                    <li class="rd-nav-item eleVoltar"><a class="rd-nav-link" style="text-decoration: none;"
+                        href="#localizacao">Localização</a>
+                    </li>
+                    <li class="rd-nav-item eleVoltar"><a class="rd-nav-link" style="text-decoration: none;"
+                        href="#projetos">Projetos</a>
+                    </li>
+                    <li class="rd-nav-item eleVoltar"><a class="rd-nav-link" style="text-decoration: none;"
+                        href="#carreira">Carreira</a>
+                    </li>
+                    <li class="rd-nav-item eleVoltar"><a class="rd-nav-link" style="text-decoration: none;"
+                        href="#rodape">Contatos</a>
+                    </li>
 
-              </div>
-            </div>
-            <div class="col-12 text-center offset-top-75" data-wow-delay=".2s"><a class="button-way-point d-inline-block text-center d-inline-flex flex-column justify-content-center" style="text-decoration: none;" href="#sobreNos"><span class="fa-chevron-down"></span></a></div>
-          </div>
-        </div>
-        <div class="decorate-layer">
-          <div class="layer-1">
-            <div class="layer" data-depth=".20"><img src="images/parallax-item-1-563x532.png" alt="" width="563" height="266"/>
-            </div>
-          </div>
-          <div class="layer-2">
-            <div class="layer" data-depth=".30"><img src="images/parallax-item-2-276x343.png" alt="" width="276" height="171"/>
-            </div>
-          </div>
-          <div class="layer-3">
-            <div class="layer" data-depth=".40"><img src="images/parallax-item-3-153x144.png" alt="" width="153" height="72"/>
-            </div>
-          </div>
-          <div class="layer-4">
-            <div class="layer" data-depth=".20"><img src="images/parallax-item-4-69x74.png" alt="" width="69" height="37"/>
-            </div>
-          </div>
-          <div class="layer-5">
-            <div class="layer" data-depth=".40"><img src="images/parallax-item-5-72x75.png" alt="" width="72" height="37"/>
-            </div>
-          </div>
-          <div class="layer-6">
-            <div class="layer" data-depth=".30"><img src="images/parallax-item-6-45x54.png" alt="" width="45" height="27"/>
-            </div>
-          </div>
-        </div>
-        
-      </section>
-    </div>
+                  </ul>
 
-      <!--SOBRE NÓS-->
-      <section class="section section-sm position-relative transicao" id="sobreNos">
-        <div class="container"  data-wow-delay=".2s">
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-
-              <div class="carousel-item active">
-                <div class="row row-30">
-                  <div class="col-lg-6 col-12">
-                    <div class="block-sm offset-top-45">
-                      <div class="section-name wow fadeInRight" data-wow-delay=".2s">Sobre nós</div>
-                      <h3 class="wow fadeInLeft devider-bottom" data-wow-delay=".3s">
-                        Conheça nossa<span class="text-primary"> História</span>
-                      </h3>
-                      <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">
-                        Em 1998, o grupo Rocheto, representada pelos irmãos Celso, José Paulo e João Emilio Rocheto, adquiriu a
-                        empresa com o objetivo de desenvolver na região a atividade agrosilvopastoril, o que foi um sucesso.
-                      </p>
-                      <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">
-                        Por volta do ano 2000, uma nova sede começou a ser construída, com novo escritório, novas casas,
-                        cantina, e alojamento, e em 2001, com o agronegócio já consolidado, obras de infra-estrutura para
-                        beneficiamento e armazenagem foram também erguidas nesta área.
-                      </p>
-                      <p class="default-letter-spacing font-weight-bold text-gray-dark wow fadeInUp" data-wow-delay=".4s">
-                        A Empresa sob o comando dos irmãos Rocheto, deu um salto vertiginoso, crescendo como nunca, e teve seu apogeu em dezembro de 2007 com a inauguração da empresa Bem Brasil Alimentos, na cidade de Araxá, empresa 100% nacional, e com intenção de ser a líder nacional de batatas pré-fritas congeladas.
-                      </p>
-                      <a class="button button-primary button-circle default-letter-spacing font-weight-bold text-gray-dark wow fadeInUp"
-                        style="color: white; text-decoration: none;" href="#carreira" data-wow-delay=".5s">Faça parte dessa
-                        História</a>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="block-decorate-img wow fadeInLeft" data-wow-delay=".2s">
-                      <img src="images/Joao Emilio.png" class="imagemApresentacao" alt="" draggable="false" width="570"
-                        height="351" />
-                    </div>
-                  </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!--Tela de inicio-->
+    <section class="section main-section parallax-scene-js"
+      style="background:url('images/FotoAguaSanta.jpg') no-repeat center center; background-size:cover;" id="inicio">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8 col-12">
+            <div class="main-decorated-box text-center text-xl-left">
+              <h1 class="text-white text-xl-center wow slideInRight" data-wow-delay=".3s"><span
+                  class="align-top offset-top-30 d-inline-block font-weight-light prefix-text"></span><span
+                  class="big font-weight-bold d-inline-flex offset-right-170"></span><span
+                  class="biggest d-block d-xl-flex font-weight-bold" style="font-family: 'Lucida Handwriting';">Água
+                  Santa</span></h1>
+
+            </div>
+          </div>
+          <div class="col-12 text-center offset-top-75" data-wow-delay=".2s"><a
+              class="button-way-point d-inline-block text-center d-inline-flex flex-column justify-content-center"
+              style="text-decoration: none;" href="#sobreNos"><span class="fa-chevron-down"></span></a></div>
+        </div>
+      </div>
+      <div class="decorate-layer">
+        <div class="layer-1">
+          <div class="layer" data-depth=".20"><img src="images/parallax-item-1-563x532.png" alt="" width="563"
+              height="266" />
           </div>
         </div>
-      </section>
+        <div class="layer-2">
+          <div class="layer" data-depth=".30"><img src="images/parallax-item-2-276x343.png" alt="" width="276"
+              height="171" />
+          </div>
+        </div>
+        <div class="layer-3">
+          <div class="layer" data-depth=".40"><img src="images/parallax-item-3-153x144.png" alt="" width="153"
+              height="72" />
+          </div>
+        </div>
+        <div class="layer-4">
+          <div class="layer" data-depth=".20"><img src="images/parallax-item-4-69x74.png" alt="" width="69"
+              height="37" />
+          </div>
+        </div>
+        <div class="layer-5">
+          <div class="layer" data-depth=".40"><img src="images/parallax-item-5-72x75.png" alt="" width="72"
+              height="37" />
+          </div>
+        </div>
+        <div class="layer-6">
+          <div class="layer" data-depth=".30"><img src="images/parallax-item-6-45x54.png" alt="" width="45"
+              height="27" />
+          </div>
+        </div>
+      </div>
 
-      <!--Produtos-->
-      <section class="section section-sm position-relative" id="product">
-        <div class="container">
-          <div class="row row-30">
+    </section>
+  </div>
+
+  <!--SOBRE NÓS-->
+  <section class="section section-sm position-relative transicao" id="sobreNos">
+    <div class="container" data-wow-delay=".2s">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="row row-30">
               <div class="col-lg-6 col-12">
                 <div class="block-sm offset-top-45">
-                  <div class="section-name wow fadeInRight" data-wow-delay=".2s">Produtos</div>
-                  <h3 class="wow fadeInLeft  devider-bottom" data-wow-delay=".3s">Nossos<span class="text-primary"> Produtos</span></h3>
-                  <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">Em 1998, o grupo Rocheto, representada pelos irmãos Celso, José Paulo e João Emilio Rocheto, adquiriu a empresa com o objetivo de desenvolver na região a atividade agrosilvopastoril, o que foi um sucesso. <br> 
-                  <br>Desde 1975, trabalhamos com boas práticas agrícolas, seja no âmbito ambiental ou social somos auditados e certificados por diversas entidades internacionais.</p>
-                  <img class="wow fadeInLeft  devider-bottom" data-wow-delay=".3s" src="images/logo.png" draggable="false">
-                  <img class="wow fadeInLeft  devider-bottom" data-wow-delay=".3s" src="images/Certificados.png" draggable="false">
+                  <div class="section-name wow fadeInRight" data-wow-delay=".2s">Sobre nós</div>
+                  <h3 class="wow fadeInLeft devider-bottom" data-wow-delay=".3s">
+                    Conheça nossa<span class="text-primary"> História</span>
+                  </h3>
+                  <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">
+                    Em 1998, o grupo Rocheto, representada pelos irmãos Celso, José Paulo e João Emilio Rocheto,
+                    adquiriu a
+                    empresa com o objetivo de desenvolver na região a atividade agrosilvopastoril, o que foi um sucesso.
+                  </p>
+                  <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">
+                    Por volta do ano 2000, uma nova sede começou a ser construída, com novo escritório, novas casas,
+                    cantina, e alojamento, e em 2001, com o agronegócio já consolidado, obras de infra-estrutura para
+                    beneficiamento e armazenagem foram também erguidas nesta área.
+                  </p>
+                  <p class="default-letter-spacing font-weight-bold text-gray-dark wow fadeInUp" data-wow-delay=".4s">
+                    A Empresa sob o comando dos irmãos Rocheto, deu um salto vertiginoso, crescendo como nunca, e teve
+                    seu apogeu em dezembro de 2007 com a inauguração da empresa Bem Brasil Alimentos, na cidade de
+                    Araxá, empresa 100% nacional, e com intenção de ser a líder nacional de batatas pré-fritas
+                    congeladas.
+                  </p>
+                  <a class="button button-primary button-circle default-letter-spacing font-weight-bold text-gray-dark wow fadeInUp"
+                    style="color: white; text-decoration: none;" href="#carreira" data-wow-delay=".5s">Faça parte dessa
+                    História</a>
                 </div>
               </div>
-
-              <div class="col-lg-6 ">
-                <div class="areas-container ">
-                  <!-- batata -->
-                  
-                   <div class="product block-decorate-img wow fadeInLeft" data-wow-delay=".2s" onclick="abrirModal('Batata', 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, inventore recusandae enim necessitatibus, quo corporis facere eveniet vero nulla minima iure veniam fugiat quasi, totam cum! Eos nisi error ad. Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, inventore recusandae enim necessitatibus, quo corporis facere eveniet vero nulla minima iure veniam fugiat quasi, totam cum! Eos nisi error ad.Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, inventore recusandae enim necessitatibus, quo corporis facere eveniet vero nulla minima iure veniam fugiat quasi, totam cum! Eos nisi error ad.', 'images/Batata.jpg')">
-                    <img src="images/Batata.jpg" alt="Imagem Batata">
-                   </div>
-                  <!-- milho -->
-                    <div class="product block-decorate-img wow fadeInLeft" data-wow-delay=".2s" onclick="abrirModal('Milho', 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, inventore recusandae enim necessitatibus, quo corporis facere eveniet vero nulla minima iure veniam fugiat quasi, totam cum! Eos nisi error ad.', 'images/milho.png')">
-                    <img src="images/milho.png" alt="Imagem milho">
-                    </div>
-                  <!-- soja -->
-                     <div class="product block-decorate-img wow fadeInLeft" data-wow-delay=".2s" onclick="abrirModal('Soja', 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, inventore recusandae enim necessitatibus, quo corporis facere eveniet vero nulla minima iure veniam fugiat quasi, totam cum! Eos nisi error ad.', 'images/soja.png')">
-                      <img src="images/soja.png" alt="Imagem soja">
-                     </div>
-                  <!-- trigo -->
-                      <div class="product block-decorate-img wow fadeInLeft" data-wow-delay=".2s" onclick="abrirModal('Trigo', 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, inventore recusandae enim necessitatibus, quo corporis facere eveniet vero nulla minima iure veniam fugiat quasi, totam cum! Eos nisi error ad.', 'images/trigo.png')">
-                      <img src="images/trigo.png" alt="Imagem Área 1">
-                      </div>
-                  <!-- vacas -->
-                       <div class="product block-decorate-img wow fadeInLeft " data-wow-delay=".2s" onclick="abrirModal('Confinamento', 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, inventore recusandae enim necessitatibus, quo corporis facere eveniet vero nulla minima iure veniam fugiat quasi, totam cum! Eos nisi error ad.', 'images/vacas.png')">
-                       <img src="images/vacas.png" alt="Imagem Área 1">
-                       </div>
-                  <!-- eucalipto -->
-                       <div class="product block-decorate-img wow fadeInLeft" data-wow-delay=".2s" onclick="abrirModal('Eucalipto', 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, inventore recusandae enim necessitatibus, quo corporis facere eveniet vero nulla minima iure veniam fugiat quasi, totam cum! Eos nisi error ad.', 'images/eucalipto.png')">
-                       <img src="images/eucalipto.png" alt="Imagem Área 1">
-                      </div>
-        </section>
-            
-       <!-- Modal -->
-      <div id="modal" class="modal">
-                <div class="modal-content">
-                  <img id="modal-image" src="" alt="Imagem ampliada">
-                  <div class="modal-description">
-                    <h2 id="modal-title"></h2>
-                    <p id="modal-text"></p>
-                  </div>
+              <div class="col-lg-6">
+                <div class="block-decorate-img wow fadeInLeft" data-wow-delay=".2s">
+                  <img src="images/Joao Emilio.png" class="imagemApresentacao" alt="" draggable="false" width="570"
+                    height="351" />
                 </div>
-                <button class="modal-close" onclick="fecharModal()">X</button>
-       </div>
-    
-      <!--Localização-->    
-      <section class="section section-sm position-relative degrade1 " id="localizacao">
-          <div class="container">
-              <div class="row row-30">
-                  <div class="col-lg-6 col-12">
-                      <div class="block-sm offset-top-45">
-                          <div class="section-name wow fadeInRight" style="color: #ffffff;" data-wow-delay=".2s">Localização</div>
-                          <h3 class="wow fadeInLeft devider-bottoms" style="color: rgb(255, 255, 255);" data-wow-delay=".3s"><span style="color: rgb(255, 255, 6); font-family: 'Lucida Handwriting'">Água Santa</span> <br>Onde estamos </h3>
-                          <h4 class="offset-xl-40 wow fadeInUp" style="color: rgb(255, 255, 6);" data-wow-delay=".4s">Filiais da Empresa Água Santa</h4>
-                          <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">A empresa Água Santa está estrategicamente localizada em regiões de destaque nos estados de Minas Gerais e Bahia, o que nos permite atender de forma eficiente nossos clientes e parceiros. Conheça mais sobre as áreas onde estão situadas nossas filiais:</p>
-                          <h3 class="offset-xl-40 wow fadeInUp" style="color: rgb(255, 255, 255);" data-wow-delay=".4s">Minas Gerais</h3>
-                          <h4 class="offset-xl-40 wow fadeInUp" style="color: rgb(255, 255, 6);" data-wow-delay=".4s">Região do Triângulo Mineiro</h4>
-                          <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">A área marcada no sudoeste de Minas Gerais corresponde à região conhecida como Triângulo Mineiro. Esta região é reconhecida por sua significativa produção agrícola e pecuária, além de ser um importante polo industrial do estado. O Triângulo Mineiro é privilegiado por suas vastas extensões de terras férteis, o que permite uma produção diversificada e abundante de alimentos. As condições climáticas favoráveis e a infraestrutura de transporte avançada também contribuem para o desenvolvimento econômico da região.</p>
-                          <h4 class="offset-xl-40 wow fadeInUp" style="color: rgb(255, 255, 6);" data-wow-delay=".4s">Região do Alto Paranaíba</h4>
-                          <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">A área localizada mais ao centro de Minas Gerais é identificada como parte da região do Alto Paranaíba. Esta região é notável pela sua produção de café de alta qualidade, além de outras culturas como soja e milho. A presença de importantes reservas de minerais também destaca o Alto Paranaíba no cenário econômico estadual e nacional. A combinação de agricultura e mineração faz desta uma área de grande importância para Minas Gerais.</p>
-                          
-                      </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="wow fadeInLeft" data-wow-delay=".4s">
-                      
-                      <img src="images/mapa.png"  class="imagemApresentacao" alt="" draggable="false"  width="100%" height="351";/>
-                      
-                      <div class="message-container">
-                        <h3 class="mensagem" data-wow-delay=".4s">
-                            <span class="numero">8</span>
-                            Municípios
-                        </h3>
-                        <h3 class="mensagem" data-wow-delay=".4s">
-                            <span class="numero">> 50 mil ha</span>
-                            Área total 
-                        </h3>
-                    </div>
-                        <h3 class="offset-xl-40 wow fadeInUp" style="color: rgb(255, 255, 255);" data-wow-delay=".4s"><br>Bahia</h3>
-                        <h4 class="offset-xl-40 wow fadeInUp" style="color: rgb(255, 255, 6);" data-wow-delay=".4s">Região Oeste da Bahia</h4>
-                        <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">No extremo oeste da Bahia, a área marcada é conhecida por sua relevância no agronegócio. Esta região tem se destacado pela produção de grãos, especialmente soja e milho, devido ao clima favorável e às técnicas modernas de cultivo. A expansão do agronegócio na região oeste da Bahia tem impulsionado o desenvolvimento econômico local, gerando empregos e infraestrutura.</p>
-                      </div>
-                    </div>
-                  </div>                                
-              
-          </div>
-      </section>
-
-      <!--Nasc-->
-      <section class="section section-sm position-relative "  id="projetos">
-        <div class="container">
-          <div class="row row-30">
-            <div class="col-lg-6 col-12">
-              <div class="block-sm offset-top-45">
-
-                <div class="section-name wow fadeInRight" data-wow-delay=".2s">Projetos</div>
-                <h3 class="wow fadeInLeft  devider-bottom" data-wow-delay=".3s">Núcleo Ambiental Água Santa do Cerrado<span class="text-primary"> NASC</span></h3>
-                <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">Criado a partir da constatação de colaboradores e gestores da fazenda sobre a rica biodiversidade presente nas grandes áreas preservadas de Cerrado, somado à vontade, criatividade e inovação de João Emílio Rocheto, o NASC nasceu da parceria entre Fazenda Água Santa, Bem Brasil Alimentos e BASF, com o intuito de mostrar o protagonismo do produtor rural na conservação do meio ambiente e como é possível conciliar preservação e produtividade agrícola, criando uma cadeia de valor sustentável para a bataticultura, do campo à mesa. A partir de agora, o espaço – que foi completamente reformulado para se tornar um centro de educação ambiental – poderá receber visitantes de públicos diversos.
-                </p>
-            </div>
-          </div>
-
-            <div class="col-lg-6">
-              <div class="block-decorate-img wow fadeInLeft" data-wow-delay=".4s">
-                
-                <img src="images/NASC.jpeg"  class="imagemApresentacao" alt="" draggable="false" width="570" height="351";/>
-                
               </div>
             </div>
           </div>
         </div>
-        
-      </section>
-      
-      <!--Carreira-->
-      <section class="section section-sm position-relative "  id="carreira">
-        <div class="container">
-          <div class="row row-30">
-            <div class="col-lg-6 col-12">
-              <div class="block-sm offset-top-45">
-
-                <div class="section-name wow fadeInRight" data-wow-delay=".2s">Carreira</div>
-                <h3 class="wow fadeInLeft  devider-bottom" data-wow-delay=".3s">Trabalhe<span class="text-primary"> CONOSCO</span></h3>
-                <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">Junte-se a nós e faça parte de uma equipe inovadora e em crescimento! Na nossa empresa, valorizamos o talento, a criatividade e o espírito de colaboração. Oferecemos um ambiente de trabalho dinâmico onde suas ideias são valorizadas e seu crescimento profissional é uma prioridade. Venha construir um futuro promissor conosco!<br>
-                  <br><strong>Cadastre seu currículo</strong></p>
-              <a class="button button-primary button-circle" style="color: white;" data-wow-delay=".3s" onclick="window.open('curriculo.html', '_blank'); return false;">Cadastrar</a>
-              <a class="button button-primary button-circle" style="color: white;" data-wow-delay=".3s" onclick="window.open('areas/areas.html', '_blank'); return false;">Carreiras</a>
-          </div>
-           
-          </div>
-
-            <div class="col-lg-6">
-              <div class=" wow fadeInLeft" data-wow-delay=".4s">
-                
-                <img src="images/img-RH.png"  class="imagemApresentacao" alt="" draggable="false" width="570" height="351";/>
-                                                   
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-  
-    <!--rodapé--> 
-      <footer class="footer-classic ">
-        <div class="container" id="rodape">
-          <div class="row row-30">
-            <div class="col-lg-4 wow fadeInLeft">
-              <!--Brand--><a class="brand" style="text-decoration: none;" href="index.html"><img class="brand-logo-dark" src="images/logo.png" draggable="false" width="100" height="17"/><img class="brand-logo-light" src="images/logo.png" draggable="false" width="100" height="17"/></a>
-              <p class="footer-classic-description offset-top-0 offset-right-25">Pensamos no negócio permanentemente. Equilibramos crescimento com sustentabilidade. Executamos nossos sonhos.</p>
-            </div>
-            <div class="col-lg-4 col-sm-8 wow fadeInUp">
-
-                <!-- Localização -->
-                <a>Localização:</a>
-                    <a class="d-inline-block accent-link"style="text-decoration: none;" href="https://www.google.com/maps/place/Fazenda+%C3%81gua+Santa+-+Jo%C3%A3o+Em%C3%ADlio+Rocheto/@-19.3600367,-47.3645872,15z/data=!4m6!3m5!1s0x94affbd0fb02c377:0xbcebbe86e305a93b!8m2!3d-19.3600367!4d-47.3645872!16s%2Fg%2F11f1wfbydr?entry=ttu" target="_blank"> BR-452, 258 - Zona Rural, Perdizes - MG, 38170-000</a>
-
-                <!-- E-mail de contato -->
-                    <a>E-mail: </a>
-                    <a class="d-inline-block accent-link" style="text-decoration: none;" href="mailto:contato@aguasanta.agr.br" target="_blank">  contato@aguasanta.agr.br<br></a>
-
-                <!-- Telefone -->
-                <a><br>Telefone:</a>
-                    <a class="d-inline-block accent-link" style="text-decoration: none;" href="tel:+5534992610069" target="_blank"> +55 34 99196-9278</a>
-
-            </div>
-            
-            <!--Mapa interativo-->
-
-            <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".2s">
-              <p class="footer-classic-title">Mapa interativo </p>
-      <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4719.785943138435!2d-47.36718059840004!3d-19.360099156090065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94affbd0fb02c377%3A0xbcebbe86e305a93b!2sFazenda%20%C3%81gua%20Santa%20-%20Jo%C3%A3o%20Em%C3%ADlio%20Rocheto!5e1!3m2!1spt-BR!2sbr!4v1726772022282!5m2!1spt-BR!2sbr" width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-          </div>
-          
+  </section>
+
+  <!--Produtos-->
+  <section class="section section-sm position-relative" id="product">
+    <div class="container">
+      <div class="row row-30">
+        <div class="col-lg-6 col-12">
+          <div class="block-sm offset-top-45">
+            <div class="section-name wow fadeInRight" data-wow-delay=".2s">Produtos</div>
+            <h3 class="wow fadeInLeft  devider-bottom" data-wow-delay=".3s">Nossos<span class="text-primary">
+                Produtos</span></h3>
+            <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">Em 1998, o grupo Rocheto, representada pelos
+              irmãos Celso, José Paulo e João Emilio Rocheto, adquiriu a empresa com o objetivo de desenvolver na região
+              a atividade agrosilvopastoril, o que foi um sucesso. <br>
+              <br>Desde 1975, trabalhamos com boas práticas agrícolas, seja no âmbito ambiental ou social somos
+              auditados e certificados por diversas entidades internacionais.
+            </p>
+            <img class="wow fadeInLeft  devider-bottom" data-wow-delay=".3s" src="images/logo.png" draggable="false">
+            <img class="wow fadeInLeft  devider-bottom" data-wow-delay=".3s" src="images/Certificados.png"
+              draggable="false">
           </div>
         </div>
-        <div class="container wow fadeInUp" data-wow-delay=".4s">
-          <div class="footer-classic-aside">
-            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. Todos os direitos reservados a Fazenda Água Santa.</p>
-         
+
+        <div class="col-lg-6 ">
+          <div class="areas-container ">
+            <!-- batata -->
+
+            <div class="product block-decorate-img wow fadeInLeft" data-wow-delay=".2s"
+              onclick="abrirModal('Batata', 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, inventore recusandae enim necessitatibus, quo corporis facere eveniet vero nulla minima iure veniam fugiat quasi, totam cum! Eos nisi error ad. Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, inventore recusandae enim necessitatibus, quo corporis facere eveniet vero nulla minima iure veniam fugiat quasi, totam cum! Eos nisi error ad.Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, inventore recusandae enim necessitatibus, quo corporis facere eveniet vero nulla minima iure veniam fugiat quasi, totam cum! Eos nisi error ad.', 'images/Batata.jpg')">
+              <img src="images/Batata.jpg" alt="Imagem Batata">
+            </div>
+            <!-- milho -->
+            <div class="product block-decorate-img wow fadeInLeft" data-wow-delay=".2s"
+              onclick="abrirModal('Milho', 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, inventore recusandae enim necessitatibus, quo corporis facere eveniet vero nulla minima iure veniam fugiat quasi, totam cum! Eos nisi error ad.', 'images/milho.png')">
+              <img src="images/milho.png" alt="Imagem milho">
+            </div>
+            <!-- soja -->
+            <div class="product block-decorate-img wow fadeInLeft" data-wow-delay=".2s"
+              onclick="abrirModal('Soja', 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, inventore recusandae enim necessitatibus, quo corporis facere eveniet vero nulla minima iure veniam fugiat quasi, totam cum! Eos nisi error ad.', 'images/soja.png')">
+              <img src="images/soja.png" alt="Imagem soja">
+            </div>
+            <!-- trigo -->
+            <div class="product block-decorate-img wow fadeInLeft" data-wow-delay=".2s"
+              onclick="abrirModal('Trigo', 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, inventore recusandae enim necessitatibus, quo corporis facere eveniet vero nulla minima iure veniam fugiat quasi, totam cum! Eos nisi error ad.', 'images/trigo.png')">
+              <img src="images/trigo.png" alt="Imagem Área 1">
+            </div>
+            <!-- vacas -->
+            <div class="product block-decorate-img wow fadeInLeft " data-wow-delay=".2s"
+              onclick="abrirModal('Confinamento', 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, inventore recusandae enim necessitatibus, quo corporis facere eveniet vero nulla minima iure veniam fugiat quasi, totam cum! Eos nisi error ad.', 'images/vacas.png')">
+              <img src="images/vacas.png" alt="Imagem Área 1">
+            </div>
+            <!-- eucalipto -->
+            <div class="product block-decorate-img wow fadeInLeft" data-wow-delay=".2s"
+              onclick="abrirModal('Eucalipto', 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, inventore recusandae enim necessitatibus, quo corporis facere eveniet vero nulla minima iure veniam fugiat quasi, totam cum! Eos nisi error ad.', 'images/eucalipto.png')">
+              <img src="images/eucalipto.png" alt="Imagem Área 1">
+            </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <img id="modal-image" src="" alt="Imagem ampliada">
+      <div class="modal-description">
+        <h2 id="modal-title"></h2>
+        <p id="modal-text"></p>
+      </div>
+    </div>
+    <button class="modal-close" onclick="fecharModal()">X</button>
+  </div>
+
+  <!--Localização-->
+  <section class="section section-sm position-relative degrade1 " id="localizacao">
+    <div class="container">
+      <div class="row row-30">
+        <div class="col-lg-6 col-12">
+          <div class="block-sm offset-top-45">
+            <div class="section-name wow fadeInRight" style="color: #ffffff;" data-wow-delay=".2s">Localização</div>
+            <h3 class="wow fadeInLeft devider-bottoms" style="color: rgb(255, 255, 255);" data-wow-delay=".3s"><span
+                style="color: rgb(255, 255, 6); font-family: 'Lucida Handwriting'">Água Santa</span> <br>Onde estamos
+            </h3>
+            <h4 class="offset-xl-40 wow fadeInUp" style="color: rgb(255, 255, 6);" data-wow-delay=".4s">Filiais da
+              Empresa Água Santa</h4>
+            <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">A empresa Água Santa está estrategicamente
+              localizada em regiões de destaque nos estados de Minas Gerais e Bahia, o que nos permite atender de forma
+              eficiente nossos clientes e parceiros. Conheça mais sobre as áreas onde estão situadas nossas filiais:</p>
+            <h3 class="offset-xl-40 wow fadeInUp" style="color: rgb(255, 255, 255);" data-wow-delay=".4s">Minas Gerais
+            </h3>
+            <h4 class="offset-xl-40 wow fadeInUp" style="color: rgb(255, 255, 6);" data-wow-delay=".4s">Região do
+              Triângulo Mineiro</h4>
+            <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">A área marcada no sudoeste de Minas Gerais
+              corresponde à região conhecida como Triângulo Mineiro. Esta região é reconhecida por sua significativa
+              produção agrícola e pecuária, além de ser um importante polo industrial do estado. O Triângulo Mineiro é
+              privilegiado por suas vastas extensões de terras férteis, o que permite uma produção diversificada e
+              abundante de alimentos. As condições climáticas favoráveis e a infraestrutura de transporte avançada
+              também contribuem para o desenvolvimento econômico da região.</p>
+            <h4 class="offset-xl-40 wow fadeInUp" style="color: rgb(255, 255, 6);" data-wow-delay=".4s">Região do Alto
+              Paranaíba</h4>
+            <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">A área localizada mais ao centro de Minas Gerais é
+              identificada como parte da região do Alto Paranaíba. Esta região é notável pela sua produção de café de
+              alta qualidade, além de outras culturas como soja e milho. A presença de importantes reservas de minerais
+              também destaca o Alto Paranaíba no cenário econômico estadual e nacional. A combinação de agricultura e
+              mineração faz desta uma área de grande importância para Minas Gerais.</p>
+
           </div>
         </div>
-      </footer>
-      
-    <!--conexão com java script-->
-    <div class="snackbars" id="form-output-global"></div>
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/fecharJanela.js"></script>
-   
-  </body>
+        <div class="col-lg-6">
+          <div class="wow fadeInLeft" data-wow-delay=".4s">
+
+            <img src="images/mapa.png" class="imagemApresentacao" alt="" draggable="false" width="100%" height="351"
+              ; />
+
+            <div class="message-container">
+              <h3 class="mensagem" data-wow-delay=".4s">
+                <span class="numero">8</span>
+                Municípios
+              </h3>
+              <h3 class="mensagem" data-wow-delay=".4s">
+                <span class="numero">> 50 mil ha</span>
+                Área total
+              </h3>
+            </div>
+            <h3 class="offset-xl-40 wow fadeInUp" style="color: rgb(255, 255, 255);" data-wow-delay=".4s"><br>Bahia</h3>
+            <h4 class="offset-xl-40 wow fadeInUp" style="color: rgb(255, 255, 6);" data-wow-delay=".4s">Região Oeste da
+              Bahia</h4>
+            <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">No extremo oeste da Bahia, a área marcada é
+              conhecida por sua relevância no agronegócio. Esta região tem se destacado pela produção de grãos,
+              especialmente soja e milho, devido ao clima favorável e às técnicas modernas de cultivo. A expansão do
+              agronegócio na região oeste da Bahia tem impulsionado o desenvolvimento econômico local, gerando empregos
+              e infraestrutura.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--Nasc-->
+  <section class="section section-sm position-relative " id="projetos">
+    <div class="container">
+      <div class="row row-30">
+        <div class="col-lg-6 col-12">
+          <div class="block-sm offset-top-45">
+
+            <div class="section-name wow fadeInRight" data-wow-delay=".2s">Projetos</div>
+            <h3 class="wow fadeInLeft  devider-bottom" data-wow-delay=".3s">Núcleo Ambiental Água Santa do Cerrado<span
+                class="text-primary"> NASC</span></h3>
+            <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">Criado a partir da constatação de colaboradores e
+              gestores da fazenda sobre a rica biodiversidade presente nas grandes áreas preservadas de Cerrado, somado
+              à vontade, criatividade e inovação de João Emílio Rocheto, o NASC nasceu da parceria entre Fazenda Água
+              Santa, Bem Brasil Alimentos e BASF, com o intuito de mostrar o protagonismo do produtor rural na
+              conservação do meio ambiente e como é possível conciliar preservação e produtividade agrícola, criando uma
+              cadeia de valor sustentável para a bataticultura, do campo à mesa. A partir de agora, o espaço – que foi
+              completamente reformulado para se tornar um centro de educação ambiental – poderá receber visitantes de
+              públicos diversos.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="block-decorate-img wow fadeInLeft" data-wow-delay=".4s">
+
+            <img src="images/NASC.jpeg" class="imagemApresentacao" alt="" draggable="false" width="570" height="351"
+              ; />
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--Carreira-->
+  <section class="section section-sm position-relative " id="carreira">
+    <div class="container">
+      <div class="row row-30">
+        <div class="col-lg-6 col-12">
+          <div class="block-sm offset-top-45">
+
+            <div class="section-name wow fadeInRight" data-wow-delay=".2s">Carreira</div>
+            <h3 class="wow fadeInLeft  devider-bottom" data-wow-delay=".3s">Trabalhe<span class="text-primary">
+                CONOSCO</span></h3>
+            <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">Junte-se a nós e faça parte de uma equipe
+              inovadora e em crescimento! Na nossa empresa, valorizamos o talento, a criatividade e o espírito de
+              colaboração. Oferecemos um ambiente de trabalho dinâmico onde suas ideias são valorizadas e seu
+              crescimento profissional é uma prioridade. Venha construir um futuro promissor conosco!<br>
+              <br><strong>Cadastre seu currículo</strong>
+            </p>
+            <a class="button button-primary button-circle" style="color: white;" data-wow-delay=".3s"
+              onclick="window.open('curriculo.html', '_blank'); return false;">Cadastrar</a>
+            <a class="button button-primary button-circle" style="color: white;" data-wow-delay=".3s"
+              onclick="window.open('areas/areas.html', '_blank'); return false;">Carreiras</a>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+          <div class=" wow fadeInLeft" data-wow-delay=".4s">
+
+            <img src="images/img-RH.png" class="imagemApresentacao" alt="" draggable="false" width="570" height="351"
+              ; />
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--rodapé-->
+  <footer class="footer-classic ">
+    <div class="container" id="rodape">
+      <div class="row row-30">
+        <div class="col-lg-4 wow fadeInLeft">
+          <!--Brand--><a class="brand" style="text-decoration: none;" href="index.html"><img class="brand-logo-dark"
+              src="images/logo.png" draggable="false" width="100" height="17" /><img class="brand-logo-light"
+              src="images/logo.png" draggable="false" width="100" height="17" /></a>
+          <p class="footer-classic-description offset-top-0 offset-right-25">Pensamos no negócio permanentemente.
+            Equilibramos crescimento com sustentabilidade. Executamos nossos sonhos.</p>
+        </div>
+        <div class="col-lg-4 col-sm-8 wow fadeInUp">
+
+          <!-- Localização -->
+          <a>Localização:</a>
+          <a class="d-inline-block accent-link" style="text-decoration: none;"
+            href="https://www.google.com/maps/place/Fazenda+%C3%81gua+Santa+-+Jo%C3%A3o+Em%C3%ADlio+Rocheto/@-19.3600367,-47.3645872,15z/data=!4m6!3m5!1s0x94affbd0fb02c377:0xbcebbe86e305a93b!8m2!3d-19.3600367!4d-47.3645872!16s%2Fg%2F11f1wfbydr?entry=ttu"
+            target="_blank"> BR-452, 258 - Zona Rural, Perdizes - MG, 38170-000</a>
+
+          <!-- E-mail de contato -->
+          <a>E-mail: </a>
+          <a class="d-inline-block accent-link" style="text-decoration: none;" href="mailto:contato@aguasanta.agr.br"
+            target="_blank"> contato@aguasanta.agr.br<br></a>
+
+          <!-- Telefone -->
+          <a><br>Telefone:</a>
+          <a class="d-inline-block accent-link" style="text-decoration: none;" href="tel:+5534992610069"
+            target="_blank"> +55 34 99196-9278</a>
+
+        </div>
+
+        <!--Mapa interativo-->
+
+        <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".2s">
+          <p class="footer-classic-title">Mapa interativo </p>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4719.785943138435!2d-47.36718059840004!3d-19.360099156090065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94affbd0fb02c377%3A0xbcebbe86e305a93b!2sFazenda%20%C3%81gua%20Santa%20-%20Jo%C3%A3o%20Em%C3%ADlio%20Rocheto!5e1!3m2!1spt-BR!2sbr!4v1726772022282!5m2!1spt-BR!2sbr"
+              width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="container wow fadeInUp" data-wow-delay=".4s">
+      <div class="footer-classic-aside">
+        <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. Todos os direitos reservados a
+          Fazenda Água Santa.</p>
+
+      </div>
+    </div>
+  </footer>
+
+  <!--conexão com java script-->
+  <div class="snackbars" id="form-output-global"></div>
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/fecharJanela.js"></script>
+
+</body>
+
 </html>

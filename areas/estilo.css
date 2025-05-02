@@ -7,7 +7,8 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background: url('../images/AguaSantaemCima.jpeg') no-repeat center center fixed;
+  background: url("../images/AguaSantaemCima.jpeg") no-repeat center center
+    fixed;
   background-size: cover;
   color: #333;
   margin: 0;
@@ -45,13 +46,13 @@ header p {
 
 @media (max-width: 768px) {
   .logo {
-      position: static;
-      display: block;
-      margin: 0 auto 10px;
+    position: static;
+    display: block;
+    margin: 0 auto 10px;
   }
 
   header {
-      padding: 1rem 0;
+    padding: 1rem 0;
   }
 }
 
@@ -103,7 +104,7 @@ footer p {
   font-size: 0.9rem;
 }
 
- nav {
+nav {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -143,25 +144,25 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
   .menu-button {
-      display: block;
+    display: block;
   }
 
   nav ul {
-      display: none;
-      flex-direction: column;
-      background: rgba(0, 0, 0, 0.8);
-      position: absolute;
-      top: 50px;
-      right: 10px;
-      padding: 10px;
-      border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 5px;
   }
 
   nav ul.active {
-      display: flex;
+    display: flex;
   }
 
   nav ul li {
-      margin: 10px 0;
+    margin: 10px 0;
   }
 }
