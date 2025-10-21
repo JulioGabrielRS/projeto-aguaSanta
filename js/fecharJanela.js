@@ -1,4 +1,3 @@
-
 const elementos = document.querySelectorAll('.eleVoltar');
 
 // Adiciona um evento de clique a cada elemento
