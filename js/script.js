@@ -1109,20 +1109,14 @@ function fecharModal() {
 	document.getElementById('modal').style.display = 'none';
 }
 
-const track = document.querySelector('.carousel-track');
-        const prevButton = document.querySelector('.carousel-button.prev');
-        const nextButton = document.querySelector('.carousel-button.next');
+document.addEventListener('DOMContentLoaded', function () {
+	var modal = document.getElementById('modal');
 
-        let currentIndex = 0;
-
-        nextButton.addEventListener('click', () => {
-            const items = document.querySelectorAll('.carousel-item');
-            currentIndex = (currentIndex + 1) % items.length;
-            track.style.transform = `translateX(-${currentIndex * 100}%)`;
-        });
-
-        prevButton.addEventListener('click', () => {
-            const items = document.querySelectorAll('.carousel-item');
-            currentIndex = (currentIndex - 1 + items.length) % items.length;
-            track.style.transform = `translateX(-${currentIndex * 100}%)`;
-        });
+	if (modal) {
+		modal.addEventListener('click', function (event) {
+			if (event.target === modal) {
+				fecharModal();
+			}
+		});
+	}
+});
