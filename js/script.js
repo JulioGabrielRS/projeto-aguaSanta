@@ -1110,7 +1110,7 @@ function fecharModal() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-	const valorPills = document.querySelectorAll('.valor-pill');
+	const valorPills = document.querySelectorAll('[data-valor-title]');
 	const valorTitulo = document.getElementById('valor-detalhe-titulo');
 	const valorTexto = document.getElementById('valor-detalhe-texto');
 
