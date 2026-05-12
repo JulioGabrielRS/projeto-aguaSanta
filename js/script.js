@@ -1110,9 +1110,18 @@ function fecharModal() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+	const modal = document.getElementById('modal');
 	const valorPills = document.querySelectorAll('[data-valor-title]');
 	const valorTitulo = document.getElementById('valor-detalhe-titulo');
 	const valorTexto = document.getElementById('valor-detalhe-texto');
+
+	if (modal) {
+		modal.addEventListener('click', function (event) {
+			if (event.target === modal) {
+				fecharModal();
+			}
+		});
+	}
 
 	valorPills.forEach(function (pill) {
 		pill.addEventListener('click', function () {
