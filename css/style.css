@@ -8964,11 +8964,14 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .valor-pill {
-	display: block;
-	width: 82%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 86%;
+	min-height: 42px;
 	margin: 10px auto;
-	padding: 7px 12px;
-	border: 0;
+	padding: 8px 14px;
+	border: 2px solid transparent;
 	border-radius: 999px;
 	background: #08769a;
 	color: #ffffff;
@@ -8976,23 +8979,19 @@ html.rd-navbar-fixed-linked .page {
 	font-size: 15px;
 	font-weight: 800;
 	line-height: 1.2;
+	text-align: center;
 	text-transform: uppercase;
 	cursor: pointer;
-	transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-}
-
-.valor-pill:nth-child(3),
-.valor-pill:nth-child(5) {
-	background: #0a6f46;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 .valor-pill:hover,
 .valor-pill:focus,
 .valor-pill.active {
-	background: #93b839;
-	box-shadow: 0 8px 18px rgba(10, 111, 70, 0.22);
+	border-color: #93b839;
+	background: #08769a;
+	box-shadow: 0 8px 18px rgba(8, 118, 154, 0.24);
 	outline: none;
-	transform: translateX(8px);
 }
 
 .valores-cards {
@@ -9004,7 +9003,10 @@ html.rd-navbar-fixed-linked .page {
 
 .valor-card {
 	position: relative;
-	min-height: 280px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 300px;
 	margin-top: 28px;
 	padding: 70px 34px 34px;
 	border: 2px solid #7a7a7a;
@@ -9020,7 +9022,7 @@ html.rd-navbar-fixed-linked .page {
 	border-color: #08769a;
 	box-shadow: 0 22px 42px rgba(8, 118, 154, 0.18);
 	outline: none;
-	transform: translateY(-8px);
+	transform: translateY(-6px);
 }
 
 .valor-card h4 {
@@ -9052,8 +9054,10 @@ html.rd-navbar-fixed-linked .page {
 
 .valor-detalhe {
 	margin-top: 24px;
+	min-height: 150px;
 	padding: 22px 26px;
-	border-left: 6px solid #93b839;
+	border: 2px solid rgba(8, 118, 154, 0.22);
+	border-left: 6px solid #08769a;
 	background: #ffffff;
 	box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
 }
@@ -9095,7 +9099,7 @@ html.rd-navbar-fixed-linked .page {
 		grid-template-columns: 1fr;
 	}
 	.valor-card {
-		min-height: auto;
+		min-height: 230px;
 	}
 	.valor-card p {
 		font-size: 24px;
@@ -9108,6 +9112,7 @@ html.rd-navbar-fixed-linked .page {
 	}
 	.valor-pill {
 		width: 92%;
+		min-height: 40px;
 	}
 	.valor-card {
 		padding: 56px 22px 26px;
