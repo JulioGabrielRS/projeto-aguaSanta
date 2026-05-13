@@ -5002,11 +5002,7 @@ html [class*='section-'].section-bottom-0 {
 	30% {
 		background-image: url("../images/FotoAguaSanta.avif");
 	}
-	33%,
-	63% {
-		background-image: url("../images/AguaSanta-I.avif");
-	}
-	66%,
+	33%,	
 	96% {
 		background-image: url("../images/plantadeira.avif");
 	}
