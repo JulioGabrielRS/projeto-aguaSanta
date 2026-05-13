@@ -4990,6 +4990,29 @@ html [class*='section-'].section-bottom-0 {
 
 .main-section {
 	padding: 30px 0 50px 0;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation: inicioBackground 18s infinite;
+	transition: background-image 0.6s ease-in-out;
+}
+
+@keyframes inicioBackground {
+	0%,
+	30% {
+		background-image: url("../images/FotoAguaSanta.avif");
+	}
+	33%,
+	63% {
+		background-image: url("../images/AguaSanta-I.avif");
+	}
+	66%,
+	96% {
+		background-image: url("../images/plantadeira.avif");
+	}
+	100% {
+		background-image: url("../images/FotoAguaSanta.avif");
+	}
 }
 
 @media (min-width: 992px) {
