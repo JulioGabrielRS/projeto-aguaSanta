@@ -6464,75 +6464,6 @@ html.tablet .ui-to-top {
 	transform: translateX(-110%);
 }
 
-@media (max-width: 991px) {
-	html.rd-navbar-fixed-linked .page {
-		padding-top: 0;
-	}
-	.rd-navbar-fixed .rd-navbar-panel {
-		height: 48px;
-		padding: 4px 10px;
-		background: transparent;
-		box-shadow: none;
-		pointer-events: none;
-	}
-	.rd-navbar-fixed .rd-navbar-toggle,
-	.rd-navbar-fixed .rd-navbar-brand {
-		pointer-events: auto;
-	}
-	.rd-navbar-fixed .rd-navbar-toggle {
-		width: 34px;
-		height: 34px;
-		margin-right: 8px;
-	}
-	.rd-navbar-fixed .rd-navbar-toggle span,
-	.rd-navbar-fixed .rd-navbar-toggle span:before,
-	.rd-navbar-fixed .rd-navbar-toggle span:after {
-		width: 24px;
-		height: 3px;
-		background-color: #9b9b9b;
-	}
-	.rd-navbar-fixed .rd-navbar-toggle span:before {
-		top: -7px;
-	}
-	.rd-navbar-fixed .rd-navbar-toggle span:after {
-		top: 7px;
-	}
-	.rd-navbar-fixed .rd-navbar-brand {
-		margin-left: 0;
-		line-height: 1;
-	}
-	.rd-navbar-fixed .rd-navbar-brand img {
-		max-width: 116px;
-		max-height: 34px;
-	}
-	.rd-navbar-fixed .rd-navbar-nav-wrap {
-		width: min(84vw, 300px);
-		box-sizing: border-box;
-	}
-	.rd-navbar-fixed .rd-navbar-nav {
-		margin: 12px 0;
-	}
-	.rd-navbar-fixed .rd-nav-item {
-		display: block;
-		width: 100%;
-		margin-left: 0;
-		letter-spacing: 0;
-	}
-	.rd-navbar-fixed .rd-nav-item + .rd-nav-item {
-		margin-top: 2px;
-	}
-	.rd-navbar-fixed .rd-nav-link {
-		display: block;
-		width: 100%;
-		padding: 11px 22px;
-		font-size: 13px;
-		line-height: 1.35;
-		white-space: normal;
-		word-break: normal;
-		overflow-wrap: break-word;
-	}
-}
-
 .rd-navbar-fixed .rd-navbar-nav-wrap::-webkit-scrollbar {
 	width: 4px;
 }
@@ -6930,75 +6861,6 @@ html.tablet .ui-to-top {
 
 .rd-navbar-fixed .rd-navbar-search-toggle:hover {
 	color: #505cfd;
-}
-
-@media (max-width: 991px) {
-	html.rd-navbar-fixed-linked .page {
-		padding-top: 0;
-	}
-	.rd-navbar-fixed .rd-navbar-panel {
-		height: 48px;
-		padding: 4px 10px;
-		background: transparent;
-		box-shadow: none;
-		pointer-events: none;
-	}
-	.rd-navbar-fixed .rd-navbar-toggle,
-	.rd-navbar-fixed .rd-navbar-brand {
-		pointer-events: auto;
-	}
-	.rd-navbar-fixed .rd-navbar-toggle {
-		width: 34px;
-		height: 34px;
-		margin-right: 8px;
-	}
-	.rd-navbar-fixed .rd-navbar-toggle span,
-	.rd-navbar-fixed .rd-navbar-toggle span:before,
-	.rd-navbar-fixed .rd-navbar-toggle span:after {
-		width: 24px;
-		height: 3px;
-		background-color: #9b9b9b;
-	}
-	.rd-navbar-fixed .rd-navbar-toggle span:before {
-		top: -7px;
-	}
-	.rd-navbar-fixed .rd-navbar-toggle span:after {
-		top: 7px;
-	}
-	.rd-navbar-fixed .rd-navbar-brand {
-		margin-left: 0;
-		line-height: 1;
-	}
-	.rd-navbar-fixed .rd-navbar-brand img {
-		max-width: 116px;
-		max-height: 34px;
-	}
-	.rd-navbar-fixed .rd-navbar-nav-wrap {
-		width: min(84vw, 300px);
-		box-sizing: border-box;
-	}
-	.rd-navbar-fixed .rd-navbar-nav {
-		margin: 12px 0;
-	}
-	.rd-navbar-fixed .rd-nav-item {
-		display: block;
-		width: 100%;
-		margin-left: 0;
-		letter-spacing: 0;
-	}
-	.rd-navbar-fixed .rd-nav-item + .rd-nav-item {
-		margin-top: 2px;
-	}
-	.rd-navbar-fixed .rd-nav-link {
-		display: block;
-		width: 100%;
-		padding: 11px 22px;
-		font-size: 13px;
-		line-height: 1.35;
-		white-space: normal;
-		word-break: normal;
-		overflow-wrap: break-word;
-	}
 }
 
 .rd-navbar-fixed .rd-navbar-collapse {
@@ -8904,23 +8766,17 @@ html.rd-navbar-fixed-linked .page {
 .product {
 	border-radius: 10px;
 	position: relative;
-	width: 100%;
+	width: 220px;
 	overflow: hidden;
 }
 
 .areas-container {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   padding: 40px;
 }
 
-.product img {
-	width: 100%;
-	aspect-ratio: 1 / 1;
-	object-fit: cover;
-	display: block;
-}
 /* Modal */
 .modal {
   display: none; /* Modal oculto inicialmente */
@@ -9504,50 +9360,6 @@ html.rd-navbar-fixed-linked .page {
 }
 
 @media (max-width: 991px) {
-	html.rd-navbar-fixed-linked .page {
-		padding-top: 0;
-	}
-	.rd-navbar-fixed .rd-navbar-panel {
-		height: 48px;
-		padding: 4px 10px;
-		background: transparent;
-		box-shadow: none;
-		pointer-events: none;
-	}
-	.rd-navbar-fixed .rd-navbar-toggle,
-	.rd-navbar-fixed .rd-navbar-brand {
-		pointer-events: auto;
-	}
-	.rd-navbar-fixed .rd-navbar-toggle {
-		width: 34px;
-		height: 34px;
-		margin-right: 8px;
-	}
-	.rd-navbar-fixed .rd-navbar-toggle span,
-	.rd-navbar-fixed .rd-navbar-toggle span:before,
-	.rd-navbar-fixed .rd-navbar-toggle span:after {
-		width: 24px;
-		height: 3px;
-		background-color: #9b9b9b;
-	}
-	.rd-navbar-fixed .rd-navbar-toggle span:before {
-		top: -7px;
-	}
-	.rd-navbar-fixed .rd-navbar-toggle span:after {
-		top: 7px;
-	}
-	.rd-navbar-fixed .rd-navbar-brand {
-		margin-left: 0;
-		line-height: 1;
-	}
-	.rd-navbar-fixed .rd-navbar-brand img {
-		max-width: 116px;
-		max-height: 34px;
-	}
-	.rd-navbar-fixed .rd-nav-link {
-		padding: 11px 22px;
-		white-space: normal;
-	}
 	.areas-container {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 		gap: 14px;
@@ -9556,51 +9368,10 @@ html.rd-navbar-fixed-linked .page {
 	.product {
 		width: 100%;
 	}
-}
-
-@media (max-width: 991px) {
-	html.rd-navbar-fixed-linked .page,
-	html.rd-navbar-fixed-linked body {
-		padding-top: 0 !important;
-	}
-	.rd-navbar-fixed .rd-navbar-panel {
-		position: fixed !important;
-		top: 0 !important;
-		left: 0 !important;
-		right: 0 !important;
-		z-index: 9999 !important;
-		display: flex !important;
-		align-items: center !important;
-		height: 48px !important;
-		padding: 4px 10px !important;
-		background: transparent !important;
-		box-shadow: none !important;
-		border: 0 !important;
-	}
-	.rd-navbar-fixed .rd-navbar-toggle {
-		display: inline-flex !important;
-		align-items: center !important;
-		justify-content: center !important;
-		flex: 0 0 34px !important;
-		width: 34px !important;
-		height: 34px !important;
-		margin: 0 8px 0 0 !important;
-	}
-	.rd-navbar-fixed .rd-navbar-brand {
-		display: block !important;
-		margin: 0 !important;
-		line-height: 1 !important;
-	}
-	.rd-navbar-fixed .rd-navbar-brand img {
-		display: block !important;
-		width: auto !important;
-		height: auto !important;
-		max-width: 116px !important;
-		max-height: 34px !important;
-	}
-	.rd-navbar-fixed .rd-navbar-toggle span,
-	.rd-navbar-fixed .rd-navbar-toggle span:before,
-	.rd-navbar-fixed .rd-navbar-toggle span:after {
-		background-color: #9b9b9b !important;
+	.product img {
+		width: 100%;
+		aspect-ratio: 1 / 1;
+		object-fit: cover;
+		display: block;
 	}
 }
