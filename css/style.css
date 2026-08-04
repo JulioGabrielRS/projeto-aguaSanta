@@ -9394,19 +9394,4 @@ html.rd-navbar-fixed-linked .page {
 		display: block;
 	}
 }
-.rd-navbar-fixed .rd-navbar-nav-wrap {
-    position: fixed;
-    top: 56px;
-    left: 0;
-    bottom: 0;
-    width: 270px;
-    z-index: 99999 !important;
-    overflow-y: auto;
-}
 
-.rd-navbar-fixed .rd-navbar-panel {
-    z-index: 100000 !important;
-}
-body.menu-open {
-    overflow: hidden;
-}
