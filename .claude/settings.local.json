@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm -rf areas/)",
+      "Bash(rm -f images/JLA-ceu.jpg images/Seta-direita.png images/Seta-esquerda.png images/background-01-1920x310.jpg images/background-01-3840x620.jpg images/background-02-1920x60.jpg images/background-02-3840x120.jpg images/img-RH.png images/logoPequena.avif images/trator.jpg images/mapa.png images/soja.png images/trigo.png images/vacas.png)",
+      "Bash(rm -f fonts/FontAwesome.otf fonts/lg.eot fonts/lg.svg fonts/lg.ttf fonts/lg.woff fonts/Linearicons.svg)",
+      "Bash(node -e ' *)"
+    ]
+  }
+}
