@@ -1158,3 +1158,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	}
 });
+const botao = document.querySelector(".rd-navbar-toggle");
+
+botao.addEventListener("click", () => {
+    document.body.classList.toggle("menu-open");
+});
