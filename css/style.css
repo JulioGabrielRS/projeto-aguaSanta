@@ -8782,21 +8782,15 @@ html.rd-navbar-fixed-linked .page {
 
 
 /* Estilo do produto */
-.produtos-intro-text {
-  font-size: 17px;
-  line-height: 1.8;
-}
-
 .produtos-certificacoes {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 30px;
   justify-content: flex-start;
 }
 
 .produtos-certificacoes img {
-  max-width: 220px;
+  width: 100%;
+  max-width: 420px;
   height: auto;
 }
 
