@@ -8796,6 +8796,88 @@ html.rd-navbar-fixed-linked .page {
   padding: 40px;
 }
 
+.product img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+.product-placeholder {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1f7a4d, #0c4a30);
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+}
+
+.product-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 16px;
+  background: linear-gradient(180deg, rgba(9, 60, 40, .25), rgba(9, 60, 40, .94));
+  color: #fff;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity .3s ease, transform .3s ease;
+  pointer-events: none;
+}
+
+.product-overlay h4 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.product-overlay p {
+  color: #f1f1f1;
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.product:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: -3px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .product {
+    cursor: pointer;
+  }
+
+  .product:hover .product-overlay,
+  .product:focus-visible .product-overlay {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+}
+
+@media (hover: none) {
+  .product {
+    cursor: pointer;
+  }
+}
+
 /* Modal */
 .modal {
   display: none; /* Modal oculto inicialmente */
@@ -9386,12 +9468,6 @@ html.rd-navbar-fixed-linked .page {
 	}
 	.product {
 		width: 100%;
-	}
-	.product img {
-		width: 100%;
-		aspect-ratio: 1 / 1;
-		object-fit: cover;
-		display: block;
 	}
 }
 

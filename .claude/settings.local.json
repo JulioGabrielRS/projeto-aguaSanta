@@ -4,7 +4,9 @@
       "Bash(rm -rf areas/)",
       "Bash(rm -f images/JLA-ceu.jpg images/Seta-direita.png images/Seta-esquerda.png images/background-01-1920x310.jpg images/background-01-3840x620.jpg images/background-02-1920x60.jpg images/background-02-3840x120.jpg images/img-RH.png images/logoPequena.avif images/trator.jpg images/mapa.png images/soja.png images/trigo.png images/vacas.png)",
       "Bash(rm -f fonts/FontAwesome.otf fonts/lg.eot fonts/lg.svg fonts/lg.ttf fonts/lg.woff fonts/Linearicons.svg)",
-      "Bash(node -e ' *)"
+      "Bash(node -e ' *)",
+      "Bash(git reset *)",
+      "Bash(rm -f favoricon.ion/apple-icon-precomposed.png fonts/FontAwesome.otf fonts/Linearicons.svg fonts/lg.eot fonts/lg.svg fonts/lg.ttf fonts/lg.woff images/AguaSanta-I.avif 'images/Logo 1000x1000.avif' images/Seta-direita.png images/Seta-esquerda.png images/background-01-1920x310.jpg images/background-01-3840x620.jpg images/background-02-1920x60.jpg images/background-02-3840x120.jpg images/img-RH.png images/logoPequena.avif images/mapa.png images/soja.png images/trator.jpg images/trigo.png images/vacas.png images/JLA-ceu.jpg)"
     ]
   }
 }

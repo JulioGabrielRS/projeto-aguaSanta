@@ -1099,9 +1099,17 @@
 	
 }());
 function abrirModal(titulo, descricao, imagem) {
+	const modalImage = document.getElementById('modal-image');
 	document.getElementById('modal-title').textContent = titulo;
 	document.getElementById('modal-text').textContent = descricao;
-	document.getElementById('modal-image').src = imagem;
+	if (imagem) {
+		modalImage.src = imagem;
+		modalImage.alt = titulo;
+		modalImage.style.display = 'block';
+	} else {
+		modalImage.removeAttribute('src');
+		modalImage.style.display = 'none';
+	}
 	document.getElementById('modal').style.display = 'flex';
 }
 
@@ -1122,6 +1130,37 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 	}
+
+	const modalCloseButton = document.getElementById('modal-close');
+	if (modalCloseButton) {
+		modalCloseButton.addEventListener('click', fecharModal);
+	}
+
+	document.addEventListener('keydown', function (event) {
+		if (event.key === 'Escape' && modal && modal.style.display === 'flex') {
+			fecharModal();
+		}
+	});
+
+	const productCards = document.querySelectorAll('.product[data-product-title]');
+	productCards.forEach(function (card) {
+		const openProductModal = function () {
+			const img = card.querySelector('img');
+			abrirModal(
+				card.getAttribute('data-product-title'),
+				card.getAttribute('data-product-text'),
+				img ? img.getAttribute('src') : null
+			);
+		};
+
+		card.addEventListener('click', openProductModal);
+		card.addEventListener('keydown', function (event) {
+			if (event.key === 'Enter' || event.key === ' ') {
+				event.preventDefault();
+				openProductModal();
+			}
+		});
+	});
 
 	valorPills.forEach(function (pill) {
 		pill.addEventListener('click', function () {
