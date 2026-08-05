@@ -6007,7 +6007,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-main-outer {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255);
 }
 
 .rd-navbar-main-outer .rd-search .form-wrap .form-label {
