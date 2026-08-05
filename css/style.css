@@ -9062,34 +9062,30 @@ html.rd-navbar-fixed-linked .page {
 	}
 }
 
-/* Slideshow das fotos do NASC (images/nasc/) */
-.nasc-media {
+/* Slideshow das fotos do NASC (images/nasc/) e do Grupo/JLA (images/jla/) */
+.media-com-selo {
 	position: relative;
 }
 
-#nasc-slideshow {
+.slideshow-fade {
 	transition: opacity .6s ease;
 }
 
-.nasc-logo-fixo {
+.logo-fixo-canto {
 	position: absolute;
 	right: 16px;
 	bottom: 16px;
 	width: 110px;
 	height: 110px;
-	object-fit: contain;
-	background-color: #ffffff;
+	object-fit: cover;
 	border-radius: 12px;
-	padding: 10px;
-	box-sizing: border-box;
 	box-shadow: 1px 5px 27px 0 rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 767px) {
-	.nasc-logo-fixo {
+	.logo-fixo-canto {
 		width: 80px;
 		height: 80px;
-		padding: 8px;
 	}
 }
 
