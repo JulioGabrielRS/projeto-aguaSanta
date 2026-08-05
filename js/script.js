@@ -1200,7 +1200,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	const nascSlideshow = document.getElementById('nasc-slideshow');
 	if (nascSlideshow) {
 		const nascImagens = [
-			'images/nasc/nasc1.avif',
 			'images/nasc/nasc2.avif',
 			'images/nasc/nasc3.avif',
 			'images/nasc/nasc4.avif',

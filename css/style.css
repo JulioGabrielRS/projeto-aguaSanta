@@ -9056,8 +9056,34 @@ html.rd-navbar-fixed-linked .page {
 }
 
 /* Slideshow das fotos do NASC (images/nasc/) */
+.nasc-media {
+	position: relative;
+}
+
 #nasc-slideshow {
 	transition: opacity .6s ease;
+}
+
+.nasc-logo-fixo {
+	position: absolute;
+	right: 16px;
+	bottom: 16px;
+	width: 110px;
+	height: 110px;
+	object-fit: contain;
+	background-color: #ffffff;
+	border-radius: 12px;
+	padding: 10px;
+	box-sizing: border-box;
+	box-shadow: 1px 5px 27px 0 rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 767px) {
+	.nasc-logo-fixo {
+		width: 80px;
+		height: 80px;
+		padding: 8px;
+	}
 }
 
 .valores-section {
