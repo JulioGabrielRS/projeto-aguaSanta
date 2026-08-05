@@ -9055,6 +9055,13 @@ html.rd-navbar-fixed-linked .page {
 	border-radius: 12px;
 }
 
+/* Alinha o topo da imagem com o topo do título (h3) da seção, em vez do topo do bloco de texto inteiro */
+@media (min-width: 1200px) {
+	.alinhar-com-titulo {
+		margin-top: 75px;
+	}
+}
+
 /* Slideshow das fotos do NASC (images/nasc/) */
 .nasc-media {
 	position: relative;
