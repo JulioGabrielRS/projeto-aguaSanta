@@ -1196,6 +1196,27 @@ document.addEventListener('DOMContentLoaded', function () {
 			track.style.transform = `translateX(-${currentIndex * 100}%)`;
 		});
 	}
+
+	const nascSlideshow = document.getElementById('nasc-slideshow');
+	if (nascSlideshow) {
+		const nascImagens = [
+			'images/nasc/nasc1.avif',
+			'images/nasc/nasc2.avif',
+			'images/nasc/nasc3.avif',
+			'images/nasc/nasc4.avif',
+			'images/nasc/nasc5.avif'
+		];
+		let nascIndex = 0;
+
+		setInterval(function () {
+			nascIndex = (nascIndex + 1) % nascImagens.length;
+			nascSlideshow.style.opacity = 0;
+			setTimeout(function () {
+				nascSlideshow.src = nascImagens[nascIndex];
+				nascSlideshow.style.opacity = 1;
+			}, 600);
+		}, 4000);
+	}
 });
 const botao = document.querySelector(".rd-navbar-toggle");
 

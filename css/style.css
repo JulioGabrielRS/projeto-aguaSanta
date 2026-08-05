@@ -9055,6 +9055,11 @@ html.rd-navbar-fixed-linked .page {
 	border-radius: 12px;
 }
 
+/* Slideshow das fotos do NASC (images/nasc/) */
+#nasc-slideshow {
+	transition: opacity .6s ease;
+}
+
 .valores-section {
 	background:
 		linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(235, 247, 240, 0.92)),
