@@ -9048,6 +9048,16 @@ html.rd-navbar-fixed-linked .page {
 	display: block; /* Garante que a imagem ocupe toda a largura disponível */
 }
 
+/* Padroniza o tamanho das imagens de Nossa História, Grupo e Sustentabilidade no formato do NASC */
+.imagem-secao-quadrada {
+	aspect-ratio: 1 / 1;
+	object-fit: contain;
+	background-color: #ffffff;
+	border-radius: 12px;
+	padding: 24px;
+	box-sizing: border-box;
+}
+
 .valores-section {
 	background:
 		linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(235, 247, 240, 0.92)),
