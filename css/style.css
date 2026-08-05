@@ -8782,6 +8782,24 @@ html.rd-navbar-fixed-linked .page {
 
 
 /* Estilo do produto */
+.produtos-intro-text {
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.produtos-certificacoes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  justify-content: flex-start;
+}
+
+.produtos-certificacoes img {
+  max-width: 220px;
+  height: auto;
+}
+
 .product {
 	border-radius: 10px;
 	position: relative;
@@ -8791,9 +8809,9 @@ html.rd-navbar-fixed-linked .page {
 
 .areas-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
-  padding: 40px;
+  padding: 40px 0;
 }
 
 .product img {
@@ -9468,6 +9486,10 @@ html.rd-navbar-fixed-linked .page {
 	}
 	.product {
 		width: 100%;
+	}
+	.produtos-certificacoes {
+		justify-content: center;
+		margin-top: 20px;
 	}
 }
 
