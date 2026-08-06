@@ -1197,30 +1197,43 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	}
 
-	function iniciarSlideshow(elementId, imagens, intervalo) {
-		const elemento = document.getElementById(elementId);
-		if (!elemento) return;
+	function iniciarSlideshow(idFundo, idTopo, imagens, intervalo) {
+		const fundo = document.getElementById(idFundo);
+		const topo = document.getElementById(idTopo);
+		if (!fundo || !topo) return;
 
 		let indice = 0;
 
 		setInterval(function () {
 			indice = (indice + 1) % imagens.length;
-			elemento.style.opacity = 0;
-			setTimeout(function () {
-				elemento.src = imagens[indice];
-				elemento.style.opacity = 1;
-			}, 600);
+			const proximaImagem = imagens[indice];
+			const preload = new Image();
+
+			preload.onload = function () {
+				fundo.src = proximaImagem;
+				topo.style.opacity = 0;
+
+				setTimeout(function () {
+					topo.style.transition = 'none';
+					topo.src = proximaImagem;
+					topo.style.opacity = 1;
+					topo.offsetHeight;
+					topo.style.transition = 'opacity 1s ease';
+				}, 1000);
+			};
+
+			preload.src = proximaImagem;
 		}, intervalo);
 	}
 
-	iniciarSlideshow('nasc-slideshow', [
+	iniciarSlideshow('nasc-slideshow-fundo', 'nasc-slideshow-topo', [
 		'images/nasc/nasc2.avif',
 		'images/nasc/nasc3.avif',
 		'images/nasc/nasc4.avif',
 		'images/nasc/nasc5.avif'
 	], 4000);
 
-	iniciarSlideshow('jla-slideshow', [
+	iniciarSlideshow('jla-slideshow-fundo', 'jla-slideshow-topo', [
 		'images/jla/jla2.avif',
 		'images/jla/jla3.avif',
 		'images/jla/jla4.avif'
