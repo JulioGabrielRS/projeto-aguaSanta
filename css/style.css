@@ -6074,7 +6074,7 @@ html.tablet .ui-to-top {
 	width: 100%;
 	display: block;
 	height: 1px;
-	background-color: #ffffff;
+	background-color: var(--color-blue);
 }
 
 .rd-navbar-static .rd-nav-item.active > .rd-navbar-submenu-toggle {
