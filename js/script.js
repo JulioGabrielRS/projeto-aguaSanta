@@ -1230,13 +1230,15 @@ document.addEventListener('DOMContentLoaded', function () {
 		'images/nasc/nasc2.avif',
 		'images/nasc/nasc3.avif',
 		'images/nasc/nasc4.avif',
-		'images/nasc/nasc5.avif'
+		'images/nasc/nasc5.avif',
+		'images/nasc/nasc6.jpg'
 	], 4000);
 
 	iniciarSlideshow('jla-slideshow-fundo', 'jla-slideshow-topo', [
 		'images/jla/jla2.avif',
 		'images/jla/jla3.avif',
-		'images/jla/jla4.avif'
+		'images/jla/jla4.avif',
+		'images/jla/jla5.png'
 	], 4000);
 });
 const botao = document.querySelector(".rd-navbar-toggle");
